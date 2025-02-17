@@ -12,7 +12,12 @@
 - Docker compose up
 - Run each microservice
 - Login at http://localhost:15672/ with `guest` username and password
-- Make HTTP Pix Request
+- Make HTTP Pix Request - http://localhost:8080/
 ```
-http post :8080 channel=pf from=bruno to=joao value=20.2
+{
+  "channel": "pf",
+  "from": "bruno",
+  "to": "joao",
+  "value": 333.00
+}
 ```

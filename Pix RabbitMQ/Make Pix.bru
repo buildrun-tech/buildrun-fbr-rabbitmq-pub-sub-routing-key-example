@@ -1,0 +1,20 @@
+meta {
+  name: Make Pix
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "channel": "pj",
+    "from": "bruno",
+    "to": "joao",
+    "value": 333.00
+  }
+}
